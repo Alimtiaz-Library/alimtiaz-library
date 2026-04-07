@@ -1,0 +1,2389 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <!-- Meta tags for SEO & Sharing -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكتبة الامتياز — ملخصات كليات الأزهر</title>
+    <meta name="description"
+        content="أحدث ملخصات وملازم أسئلة مجابة لطلاب كليات الأزهر — ملخص شامل، مقالي، صح وخطأ، والكتاب الجامعي.">
+    <meta property="og:title" content="مكتبة الامتياز — ملخصات كليات الأزهر">
+    <meta property="og:description" content="أحدث ملخصات وملازم أسئلة لعام 2026. احصل على موادك حصرياً وبشكل منظم.">
+    <meta property="og:type" content="website">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <!-- Fonts (async execution for better performance) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Manrope:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Manrope:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap"
+            rel="stylesheet">
+    </noscript>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+
+    <style>
+        :root {
+            --primary: #c5a059;
+            /* Rich Gold */
+            --on-primary: #000000;
+            --primary-container: #1b1811;
+            --on-primary-container: #d4af37;
+            --surface: #0a0a0a;
+            --background: #0a0a0a;
+            --on-background: #ffffff;
+            --surface-container: #141414;
+            --surface-container-low: #0f0f0f;
+            --surface-container-high: #1a1a1a;
+            --outline: #8c7b60;
+            --outline-variant: #2d2d2d;
+            --accent-summary: linear-gradient(135deg, #c5a059 0%, #8e7345 100%);
+            --on-accent-summary: #ffffff;
+            --accent-essay: #1e3a2a;
+            --on-accent-essay: #78d1a1;
+            --accent-tf: #1e1e3f;
+            --on-accent-tf: #9fa9ff;
+            --accent-ai: linear-gradient(135deg, #d4af37 0%, #f9e27d 50%, #d4af37 100%);
+            --on-accent-ai: #000000;
+            --glass: rgba(255, 255, 255, 0.03);
+            --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        * {
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--background);
+            color: var(--on-background);
+            font-family: 'Cairo', 'Manrope', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+
+
+        /* Premium Header */
+        header {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1.8rem 5%;
+            background: rgba(10, 10, 10, 0.9);
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            z-index: 1000;
+            border-bottom: 1px solid var(--outline-variant);
+            gap: 0.2rem;
+        }
+
+        header h1 {
+            font-family: 'Cairo', sans-serif;
+            font-weight: 900;
+            font-size: 2.2rem;
+            color: var(--primary);
+            letter-spacing: -0.02em;
+            text-align: center;
+            line-height: 1.1;
+        }
+
+        .header-subtitle {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--on-primary-container);
+            text-align: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 520px;
+            padding: 40px 24px;
+            animation: fadeInUp 0.8s ease;
+        }
+
+        /* Hero Text */
+        .hero {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .hero h2 {
+            font-size: 2.2rem;
+            font-weight: 900;
+            line-height: 1.2;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1rem;
+            color: var(--outline);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        /* Premium Glass Card */
+        .card {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 2rem;
+            padding: 1.8rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            transition: var(--transition);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+            border-color: var(--primary);
+        }
+
+        .card h3 {
+            font-size: 1.25rem;
+            font-weight: 800;
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--primary);
+        }
+
+        .label {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--outline);
+            margin-bottom: 0.5rem;
+            margin-right: 0.5rem;
+            display: block;
+        }
+
+        /* Select Styling */
+        .select-wrapper {
+            margin-bottom: 1.2rem;
+        }
+
+        .custom-select {
+            width: 100%;
+            padding: 1rem 1.2rem;
+            background: var(--surface-container-low);
+            border: 1px solid transparent;
+            border-radius: 1rem;
+            color: var(--on-background);
+            font-family: 'Cairo', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            outline: none;
+            transition: var(--transition);
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23c5a059' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: left 1rem center;
+        }
+
+        .custom-select:focus {
+            background: var(--surface-container-high);
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px rgba(197, 160, 89, 0.1);
+        }
+
+        .custom-select option:disabled {
+            color: #555555;
+            font-style: italic;
+        }
+
+        /* Subject Cards */
+        .subject-card {
+            border-right: 6px solid var(--primary);
+        }
+
+        /* =========================================
+           🎁 قسم المزايا الترويجي
+           ========================================= */
+        .benefits-card {
+            border: 1px solid rgba(197, 160, 89, 0.2);
+            background: linear-gradient(160deg, #131007 0%, #0a0a0a 100%);
+            padding: 1.3rem !important;
+        }
+
+        .benefits-title {
+            display: flex;
+            align-items: center;
+            gap: 0.9rem;
+            margin-bottom: 1.1rem;
+            padding-bottom: 0.9rem;
+            border-bottom: 1px solid var(--outline-variant);
+        }
+
+        .benefits-icon {
+            font-size: 2rem;
+            flex-shrink: 0;
+            filter: drop-shadow(0 0 8px rgba(197, 160, 89, 0.5));
+        }
+
+        .benefits-title h4 {
+            font-size: 1rem;
+            font-weight: 900;
+            color: var(--primary);
+            margin-bottom: 0.15rem;
+        }
+
+        .benefits-title p {
+            font-size: 0.78rem;
+            color: var(--outline);
+            font-weight: 600;
+        }
+
+        .benefits-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.65rem 0.8rem;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--outline-variant);
+            border-radius: 0.8rem;
+            transition: border-color 0.3s ease, background 0.3s ease;
+            animation: fadeInUp 0.5s ease both;
+        }
+
+        .benefit-item:nth-child(1) {
+            animation-delay: 0.05s;
+        }
+
+        .benefit-item:nth-child(2) {
+            animation-delay: 0.10s;
+        }
+
+        .benefit-item:nth-child(3) {
+            animation-delay: 0.15s;
+        }
+
+        .benefit-item:nth-child(4) {
+            animation-delay: 0.20s;
+        }
+
+        .benefit-item:nth-child(5) {
+            animation-delay: 0.25s;
+        }
+
+        .benefit-item:nth-child(6) {
+            animation-delay: 0.30s;
+        }
+
+        .benefit-item:hover {
+            border-color: rgba(197, 160, 89, 0.4);
+            background: rgba(197, 160, 89, 0.04);
+        }
+
+        .benefit-item--ai {
+            border-color: rgba(99, 102, 241, 0.35);
+            background: rgba(99, 102, 241, 0.05);
+        }
+
+        .benefit-item--ai:hover {
+            border-color: rgba(99, 102, 241, 0.6);
+            background: rgba(99, 102, 241, 0.08);
+        }
+
+        .benefit-num {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: var(--primary-container);
+            border: 1.5px solid var(--primary);
+            color: var(--primary);
+            font-size: 0.8rem;
+            font-weight: 900;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 0.1rem;
+        }
+
+        .benefit-num--ai {
+            background: rgba(99, 102, 241, 0.15);
+            border-color: #6366f1;
+            color: #a5b4fc;
+        }
+
+        .benefit-content {
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+        }
+
+        .benefit-content strong {
+            font-size: 0.9rem;
+            font-weight: 800;
+            color: var(--on-background);
+            line-height: 1.3;
+        }
+
+        .benefit-content span {
+            font-size: 0.8rem;
+            color: var(--outline);
+            font-weight: 600;
+            line-height: 1.5;
+        }
+
+        .hot-tag {
+            display: inline-block;
+            background: linear-gradient(135deg, #dc2626, #b91c1c);
+            color: #fff;
+            border-radius: 9999px;
+            padding: 0.05rem 0.4rem;
+            font-size: 0.7rem;
+            font-weight: 800;
+            font-style: normal !important;
+            margin-right: 0.3rem;
+            vertical-align: middle;
+        }
+
+        /* =========================================
+           🛒 نظام قائمة الشراء
+           ========================================= */
+        #purchase-section {
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 0.6s ease;
+        }
+
+        .purchase-header {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .purchase-header h3 {
+            font-size: 1.6rem;
+            font-weight: 900;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            justify-content: center;
+        }
+
+        .purchase-header p {
+            color: var(--outline);
+            font-size: 0.92rem;
+        }
+
+        /* ===== Pricing Table ===== */
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: 'Cairo', sans-serif;
+            margin-bottom: 0.5rem;
+        }
+
+        .pricing-table thead th {
+            background: rgba(197, 160, 89, 0.12);
+            color: var(--primary);
+            font-size: 0.78rem;
+            font-weight: 800;
+            padding: 0.55rem 0.5rem;
+            text-align: center;
+            border-bottom: 2px solid var(--primary);
+            letter-spacing: 0.01em;
+        }
+
+        .pricing-table thead th:first-child {
+            border-radius: 0 0.6rem 0 0;
+        }
+
+        .pricing-table thead th:last-child {
+            border-radius: 0.6rem 0 0 0;
+        }
+
+        .pricing-table tbody tr {
+            border-bottom: 1px solid var(--outline-variant);
+            transition: background 0.25s ease;
+            cursor: default;
+        }
+
+        .pricing-table tbody tr:last-child {
+            border-bottom: none;
+        }
+
+        .pricing-table tbody td {
+            padding: 0.65rem 0.5rem;
+            text-align: center;
+            font-size: 0.88rem;
+            font-weight: 700;
+            color: var(--outline);
+            transition: color 0.25s ease;
+        }
+
+        .pricing-table tbody td.col-count {
+            font-weight: 900;
+            color: var(--on-background);
+            font-size: 0.9rem;
+        }
+
+        .pricing-table tbody td.col-total {
+            font-weight: 900;
+            color: var(--on-background);
+        }
+
+        .pricing-table tbody td.col-saving {
+            color: #4ade80;
+        }
+
+        .pricing-table tbody td.col-saving.zero {
+            color: var(--outline);
+        }
+
+        /* Active row highlight */
+        .pricing-table tbody tr.pt-active {
+            background: var(--primary-container);
+        }
+
+        .pricing-table tbody tr.pt-active td {
+            color: var(--on-primary-container);
+        }
+
+        .pricing-table tbody tr.pt-active td.col-count {
+            color: var(--primary);
+        }
+
+        .pricing-table tbody tr.pt-active td.col-saving {
+            color: #4ade80;
+        }
+
+        .pricing-table tbody tr.pt-active td.col-total {
+            color: var(--primary);
+            font-size: 1rem;
+        }
+
+        .best-deal-tag {
+            display: inline-block;
+            background: linear-gradient(135deg, #7c3aed, #4f46e5);
+            color: #fff;
+            border-radius: 9999px;
+            padding: 0.1rem 0.45rem;
+            font-size: 0.62rem;
+            font-weight: 800;
+            vertical-align: middle;
+            margin-right: 0.3rem;
+        }
+
+        /* Subject checkboxes */
+        .subject-check-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .subject-check-item {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            background: var(--surface-container-low);
+            border: 2px solid var(--outline-variant);
+            border-radius: 1rem;
+            padding: 0.9rem 1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            user-select: none;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .subject-check-item::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(197, 160, 89, 0.08) 0%, transparent 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+
+        .subject-check-item:hover {
+            border-color: var(--primary);
+            transform: translateX(-3px);
+        }
+
+        .subject-check-item:hover::before {
+            opacity: 1;
+        }
+
+        .subject-check-item.checked {
+            border-color: var(--primary);
+            background: var(--primary-container);
+        }
+
+        .subject-check-item.checked::before {
+            opacity: 1;
+        }
+
+        .check-box {
+            width: 26px;
+            height: 26px;
+            border-radius: 8px;
+            border: 2px solid var(--outline);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: var(--transition);
+            background: transparent;
+        }
+
+        .subject-check-item.checked .check-box {
+            background: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .check-mark {
+            font-size: 1rem;
+            color: #000;
+            opacity: 0;
+            transform: scale(0);
+            transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .subject-check-item.checked .check-mark {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .check-label {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--on-background);
+            flex: 1;
+        }
+
+        .check-num {
+            font-size: 0.75rem;
+            color: var(--outline);
+            font-weight: 600;
+        }
+
+        .savings-pulse {
+            display: inline-block;
+            background: linear-gradient(135deg, #166534, #14532d);
+            color: #4ade80;
+            border-radius: 9999px;
+            padding: 0.3rem 0.9rem;
+            font-size: 0.82rem;
+            font-weight: 800;
+            margin-top: 0.5rem;
+            animation: pulse-savings 2s infinite;
+        }
+
+        @keyframes pulse-savings {
+
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.4);
+            }
+
+            50% {
+                box-shadow: 0 0 0 8px rgba(74, 222, 128, 0);
+            }
+        }
+
+        /* WhatsApp Order Button */
+        .btn-whatsapp-order {
+            width: 100%;
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            color: white;
+            font-size: 1.05rem;
+            font-weight: 900;
+            padding: 1.1rem 1.5rem;
+            border-radius: 1rem;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.7rem;
+            transition: var(--transition);
+            box-shadow: 0 8px 24px rgba(37, 211, 102, 0.3);
+            animation: fadeInUp 0.4s ease;
+        }
+
+        .btn-whatsapp-order:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 32px rgba(37, 211, 102, 0.45);
+            filter: brightness(1.05);
+        }
+
+        .btn-whatsapp-order:active {
+            transform: scale(0.98);
+        }
+
+        .btn-whatsapp-order:disabled {
+            background: var(--surface-container-high);
+            color: var(--outline);
+            box-shadow: none;
+            cursor: not-allowed;
+            transform: none;
+            animation: none;
+        }
+
+        /* Select all / clear row */
+        .select-all-row {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .btn-select-all,
+        .btn-clear-all {
+            flex: 1;
+            background: var(--surface-container-high);
+            border: 1px solid var(--outline-variant);
+            border-radius: 0.7rem;
+            padding: 0.55rem 0.5rem;
+            font-family: 'Cairo', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--outline);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .btn-select-all:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-clear-all:hover {
+            border-color: #ef4444;
+            color: #ef4444;
+        }
+
+        /* Promo label for the 5-subject offer */
+        .promo-label {
+            background: linear-gradient(135deg, #7c3aed, #4f46e5);
+            color: white;
+            border-radius: 9999px;
+            padding: 0.15rem 0.5rem;
+            font-size: 0.65rem;
+            font-weight: 800;
+            margin-right: 0.4rem;
+            vertical-align: middle;
+        }
+
+        .actions-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.8rem;
+        }
+
+        .btn {
+            border: none;
+            border-radius: 9999px;
+            padding: 14px 12px;
+            font-family: 'Cairo', sans-serif;
+            font-weight: 700;
+            font-size: 0.9rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .btn span {
+            font-size: 1.2rem;
+        }
+
+        .btn-summary {
+            background: var(--accent-summary);
+            color: var(--on-accent-summary);
+            grid-column: span 2;
+        }
+
+        .btn-essay {
+            background: var(--accent-essay);
+            color: var(--on-accent-essay);
+        }
+
+        .btn-tf {
+            background: var(--accent-tf);
+            color: var(--on-accent-tf);
+        }
+
+        .btn-full {
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            color: #ffffff;
+            grid-column: span 2;
+            margin-top: 0.4rem;
+            box-shadow: 0 8px 16px rgba(30, 58, 138, 0.15);
+        }
+
+        .btn-book {
+            background: linear-gradient(135deg, #4c1d95, #8b5cf6);
+            color: #ffffff;
+            grid-column: span 2;
+            margin-top: 0.4rem;
+            box-shadow: 0 8px 16px rgba(76, 29, 149, 0.15);
+        }
+
+        .btn:hover {
+            filter: brightness(0.97);
+            transform: translateY(-2px);
+        }
+
+        /* Access & Email Cards */
+        .access-card {
+            border-left: 8px solid var(--primary);
+            background: var(--surface-container-high);
+        }
+
+        .btn-access {
+            background: var(--primary);
+            color: #fff;
+            width: 100%;
+            padding: 1.2rem;
+            font-size: 1.1rem;
+            margin-top: 1rem;
+        }
+
+        .email-display {
+            width: 100%;
+            background: var(--surface-container-low);
+            border: 1px solid var(--outline-variant);
+            border-radius: 1rem;
+            padding: 1rem;
+            font-size: 1rem;
+            color: var(--primary);
+            direction: ltr;
+            text-align: left;
+            margin-bottom: 1rem;
+            outline: none;
+            transition: var(--transition);
+        }
+
+        .email-display:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px rgba(197, 160, 89, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            margin-top: auto;
+            padding: 60px 20px;
+            text-align: center;
+            width: 100%;
+            border-top: 1px solid var(--outline-variant);
+            background: var(--surface-container-low);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .social-btn {
+            padding: 12px 24px;
+            border-radius: 9999px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .social-btn.wa {
+            background: #25D366;
+            color: white;
+        }
+
+        .social-btn.tg {
+            background: #0088cc;
+            color: white;
+        }
+
+        .social-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Hint section */
+        #select-hint {
+            text-align: center;
+            padding: 2rem;
+            color: var(--outline);
+            animation: fadeIn 1s ease;
+        }
+
+        #select-hint .icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        /* Overlay */
+        #secure-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--surface);
+            z-index: 9999;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .loader {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: var(--primary-container);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+            animation: pulse-ring 1.5s infinite;
+        }
+
+        .loader.static-red {
+            animation: none;
+            background: rgba(239, 68, 68, 0.15);
+            box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+        }
+
+        @keyframes pulse-ring {
+            0% {
+                transform: scale(0.9);
+                box-shadow: 0 0 0 0 rgba(0, 33, 49, 0.4);
+            }
+
+            70% {
+                transform: scale(1);
+                box-shadow: 0 0 0 30px rgba(0, 33, 49, 0);
+            }
+
+            100% {
+                transform: scale(0.9);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* AI Modal */
+        #ai-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            z-index: 10001;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            width: 95%;
+            max-width: 1000px;
+            height: 90vh;
+            background: var(--surface);
+            border-radius: 2rem;
+            overflow: hidden;
+            position: relative;
+            border: 1px solid var(--outline-variant);
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 1.5rem;
+            left: 1.5rem;
+            background: var(--primary);
+            color: #fff;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .paste-success {
+            font-weight: 700;
+            margin-top: 10px;
+            text-align: center;
+            display: none;
+        }
+
+        /* Helpers */
+        .hidden {
+            display: none;
+        }
+
+        #overlay-msg {
+            color: var(--outline);
+            padding: 0 40px;
+            margin-top: 10px;
+        }
+
+        .email-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .email-btn-save {
+            flex: 2;
+        }
+
+        .email-btn-paste {
+            flex: 1;
+            background: var(--surface-container-high);
+            color: var(--primary);
+        }
+
+        /* =========================================
+           👁️ رابط عرض محتويات المادة (للمستخدمين غير المشتركين)
+           ========================================= */
+        .subject-check-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* منطقة الاختيار (مربع الصح + اسم المادة) */
+        .subject-select-area {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            flex: 1;
+            cursor: pointer;
+            min-height: 100%;
+        }
+
+        /* زر عرض محتويات المادة — عنصر منفصل تماماً */
+        .preview-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.6rem 0.7rem;
+            cursor: pointer;
+            font-size: 0.68rem;
+            color: var(--primary);
+            font-weight: 700;
+            white-space: nowrap;
+            opacity: 0.65;
+            transition: all 0.3s ease;
+            text-decoration: underline;
+            text-decoration-style: dotted;
+            text-underline-offset: 3px;
+            border-radius: 8px;
+            flex-shrink: 0;
+            -webkit-tap-highlight-color: rgba(197, 160, 89, 0.15);
+        }
+
+        .preview-toggle:hover {
+            opacity: 1;
+            background: rgba(197, 160, 89, 0.1);
+        }
+
+        .preview-toggle:active {
+            opacity: 1;
+            background: rgba(197, 160, 89, 0.18);
+        }
+
+        .subject-preview-container {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+                opacity 0.4s ease,
+                padding 0.4s ease;
+            opacity: 0;
+            padding: 0 0.5rem;
+        }
+
+        .subject-preview-container.open {
+            max-height: 400px;
+            opacity: 1;
+            padding: 0.6rem 0.5rem 0.3rem;
+        }
+
+        .subject-preview-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.45rem;
+        }
+
+        .preview-card-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            padding: 0.55rem 0.4rem;
+            border-radius: 0.7rem;
+            border: 1.5px solid var(--outline-variant);
+            background: var(--surface-container-low);
+            color: var(--outline);
+            font-family: 'Cairo', sans-serif;
+            font-size: 0.73rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .preview-card-btn:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+            background: rgba(197, 160, 89, 0.06);
+            transform: translateY(-1px);
+        }
+
+        .preview-card-btn:active {
+            transform: scale(0.97);
+        }
+
+        .preview-card-btn .material-symbols-outlined {
+            font-size: 1rem;
+        }
+
+        .preview-card-btn.span-2 {
+            grid-column: span 2;
+        }
+
+        .preview-card-btn.btn-preview-summary {
+            border-color: rgba(197, 160, 89, 0.3);
+            background: rgba(197, 160, 89, 0.05);
+            color: var(--primary);
+        }
+
+        .preview-card-btn.btn-preview-essay {
+            border-color: rgba(120, 209, 161, 0.25);
+            background: rgba(30, 58, 42, 0.4);
+            color: var(--on-accent-essay);
+        }
+
+        .preview-card-btn.btn-preview-tf {
+            border-color: rgba(159, 169, 255, 0.25);
+            background: rgba(30, 30, 63, 0.4);
+            color: var(--on-accent-tf);
+        }
+
+        .preview-card-btn.btn-preview-full {
+            border-color: rgba(59, 130, 246, 0.25);
+            background: rgba(30, 58, 138, 0.15);
+            color: #93c5fd;
+        }
+
+        .preview-card-btn.btn-preview-book {
+            border-color: rgba(139, 92, 246, 0.25);
+            background: rgba(76, 29, 149, 0.15);
+            color: #c4b5fd;
+        }
+
+        /* =========================================
+           📱 أقصى درجات التوافق مع شاشات الهواتف 
+           ========================================= */
+        @media (max-width: 480px) {
+
+            #overlay-msg {
+                padding: 0 16px;
+                font-size: 0.95rem;
+            }
+
+            header {
+                padding: 1.2rem 5%;
+                gap: 0.1rem;
+            }
+
+            header h1 {
+                font-size: 1.6rem;
+            }
+
+            .header-subtitle {
+                font-size: 0.85rem;
+            }
+
+            .container {
+                padding: 20px 16px;
+            }
+
+            .hero h2 {
+                font-size: 1.8rem;
+                margin-bottom: 0.8rem;
+            }
+
+            .hero p {
+                font-size: 0.95rem;
+                padding: 0 10px;
+            }
+
+            .card {
+                padding: 1.25rem;
+                border-radius: 1.5rem;
+                margin-bottom: 1.2rem;
+            }
+
+            .card h3 {
+                font-size: 1.15rem;
+            }
+
+            /* تحويل الأزرار إلى عمود واحد لتوسيع مساحة اللمس على الهاتف */
+            .actions-grid {
+                grid-template-columns: 1fr;
+                gap: 0.6rem;
+            }
+
+            .btn-summary,
+            .btn-essay,
+            .btn-tf,
+            .btn-full,
+            .btn-book {
+                grid-column: span 1;
+                /* إلغاء الامتداد على عمودين لتتناسب مع العمود الواحد */
+            }
+
+            .btn {
+                padding: 16px 12px;
+                /* زيادة ارتفاع الزر لتسهيل النقر بالإصبع */
+                font-size: 1rem;
+            }
+
+            .custom-select {
+                padding: 0.9rem 1rem;
+                font-size: 0.9rem;
+            }
+
+            .social-links {
+                flex-direction: column;
+                padding: 0 1rem;
+            }
+
+            .social-btn {
+                width: 100%;
+                justify-content: center;
+                padding: 14px;
+            }
+
+            footer {
+                padding: 40px 16px;
+            }
+
+            #select-hint .icon {
+                font-size: 2.5rem;
+            }
+
+            .modal-content {
+                width: 100%;
+                height: 100vh;
+                border-radius: 0;
+            }
+
+            .close-modal {
+                top: 1rem;
+                left: 1rem;
+            }
+
+            .email-actions {
+                flex-direction: column;
+            }
+
+            /* Preview cards responsive */
+            .subject-preview-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .preview-card-btn.span-2 {
+                grid-column: span 1;
+            }
+
+            .preview-toggle {
+                font-size: 0.62rem;
+                padding: 0.5rem 0.5rem;
+            }
+        }
+
+        /* =========================================
+           🖥️ Desktop Warning Banner
+           ========================================= */
+        #desktop-banner {
+            display: none;
+            width: 100%;
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.15), rgba(79, 70, 229, 0.1));
+            border-bottom: 2px solid rgba(139, 92, 246, 0.4);
+            padding: 0.8rem 1rem;
+            text-align: center;
+            font-size: 0.85rem;
+            font-weight: 800;
+            color: #d8b4e2;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            animation: fadeIn 0.5s ease;
+        }
+
+        #desktop-banner.show {
+            display: flex;
+        }
+
+        /* =========================================
+           📤 زر المشاركة
+           ========================================= */
+        .btn-share {
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            border: 1px solid rgba(197, 160, 89, 0.4);
+            color: var(--primary);
+            border-radius: 9999px;
+            padding: 0.75rem 1.8rem;
+            font-family: 'Cairo', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 800;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition);
+        }
+
+        .btn-share:hover {
+            border-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(197, 160, 89, 0.25);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>مكتبة الامتياز</h1>
+        <p class="header-subtitle">ملخصّات كليّات الأزهر</p>
+    </header>
+
+    <!-- 🖥️ Desktop Warning Banner -->
+    <div id="desktop-banner">
+        <span>🖥️</span>
+        <span>أنت تتصفح من <strong>جهاز كمبيوتر</strong> — لفتح الملفات بنجاح يجب استخدام <strong>هاتفك
+                الشخصي</strong></span>
+        <span style="opacity:0.6; font-size:0.75rem;">( النظام الأمني يدعم عرض الملفات عبر الهواتف فقط )</span>
+    </div>
+
+    <div class="container">
+
+        <div class="hero">
+            <h2>بوابتك للتميز في العلوم الشرعية والعربية</h2>
+            <p>أحدث ملخصات وملازم أسئلة مجابة لعام 2026 تغطي الكتب كاملة (تناسب جميع الكليات)</p>
+            <div style="margin-top: 1.5rem;">
+                <a href="faq.html" class="btn-share"
+                    style="background: linear-gradient(135deg, #1e3a2a, #11281c); border-color: rgba(120, 209, 161, 0.4); text-decoration: none; color: #78d1a1;">
+                    <span class="material-symbols-outlined" style="font-size:1.1rem;">help</span>
+                    الأسئلة الشائعة والإجابات
+                </a>
+            </div>
+        </div>
+
+        <!-- Filter Card -->
+        <div class="card">
+            <h3><span class="material-symbols-outlined">filter_list</span> اختر بياناتك الدراسية</h3>
+
+            <div class="select-wrapper">
+                <span class="label">الكلية</span>
+                <select id="sel-faculty" class="custom-select" onchange="onSelectChange()" disabled>
+                    <option value="sharia" selected>شريعة إسلامية</option>
+                </select>
+            </div>
+
+            <div class="select-wrapper">
+                <span class="label">الفصل الدراسي</span>
+                <select id="sel-semester" class="custom-select" onchange="onSelectChange()" disabled>
+                    <option value="1" disabled>الفصل الدراسي الأول</option>
+                    <option value="2" selected>الفصل الدراسي الثاني</option>
+                </select>
+            </div>
+
+            <div class="select-wrapper">
+                <span class="label">الفرقة</span>
+                <select id="sel-year" class="custom-select" onchange="onSelectChange()">
+                    <option value="" disabled selected>-- اختر الفرقة --</option>
+                    <option value="1">الفرقة الأولى</option>
+                    <option value="2" disabled>الفرقة الثانية — يتوفر قريباً</option>
+                    <option value="3" disabled>الفرقة الثالثة — يتوفر قريباً</option>
+                    <option value="4" disabled>الفرقة الرابعة — يتوفر قريباً</option>
+                </select>
+            </div>
+
+            <div class="select-wrapper">
+                <span class="label">المذهب</span>
+                <select id="sel-madhhab" class="custom-select" onchange="onSelectChange()">
+                    <option value="" disabled selected>-- اختر المذهب --</option>
+                    <option value="hanafi">حنفي</option>
+                    <option value="shafii">شافعي</option>
+                    <option value="maliki">مالكي</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Hint Section -->
+        <div id="select-hint">
+            <span class="icon" id="hint-icon">⏳</span>
+            <span id="hint-text" style="font-weight: 700;">جاري تحميل البيانات...</span>
+        </div>
+
+        <!-- ===== قسم الشراء والاشتراك ===== -->
+        <div id="purchase-section" class="hidden">
+
+
+            <!-- ===== قسم المزايا الترويجي ===== -->
+            <div class="card benefits-card">
+                <div class="benefits-title">
+                    <span class="benefits-icon">🎁</span>
+                    <div>
+                        <h4>اشتراكك في كل مادة يشمل ٥ ملفات تضمن لك التفوق</h4>
+                    </div>
+                </div>
+
+                <div class="benefits-list">
+                    <div class="benefit-item">
+                        <div class="benefit-num">١</div>
+                        <div class="benefit-content">
+                            <strong>ملخص شامل يُغني عن الكتاب</strong>
+                            <span>يغطي الكتاب كاملاً بأسلوب منظم ومنسق جاهز على الدراسة: احفظ وقتك الضائع في حشو الكتاب
+                                واستخلاص النقاط المهمة، وركز مجهودك على دراسة كل ما هو مهم ومواضع امتحانات</span>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-num">٢</div>
+                        <div class="benefit-content">
+                            <strong>أسئلة الامتحان المقالية — مجابة <em class="hot-tag">⚡ حصري</em></strong>
+                            <span>ملف حصري (نتميز به) لن تجده في أي مكان آخر — يغطي جميع أسئلة الامتحان المقالية
+                                المتوقعة بإجاباتها الوافية. ادخل الامتحان وأنت حالل أسئلته مسبقاً</span>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-num">٣</div>
+                        <div class="benefit-content">
+                            <strong>ملزمة صواب وخطأ مع التعليل والتصويب</strong>
+                            <span>تغطي الكتاب بالكامل — تزيد استيعابك وفهمك وتثبيتك للمادة وتُستخدم لمراجعة المنهج كله
+                                في وقت قياسي ليلة الامتحان</span>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-num">٤</div>
+                        <div class="benefit-content">
+                            <strong>ملف الدراسة الشامل <em class="hot-tag">⭐ ننصح به</em></strong>
+                            <span>ملف واحد يجمع: ملخص الدرس ← أسئلة المقالي ← أسئلة الصواب والخطأ — لدراسة الثلاث أقسام
+                                من ملف واحد بشكل متسلسل ومتتالي</span>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-num">٥</div>
+                        <div class="benefit-content">
+                            <strong>الكتاب الجامعي</strong>
+                            <span>الوصول لأحدث نسخة إلكترونية من الكتاب الجامعي — <em
+                                    style="color:var(--outline); font-style:normal;">المكتبة لا تبيع الكتب بل توفرها
+                                    للطلاب مجاناً للاسترشاد</em></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    style="margin-top: 1rem; padding: 0.7rem 0.9rem; background: rgba(197, 160, 89, 0.06); border: 1px dashed rgba(197, 160, 89, 0.3); border-radius: 0.8rem; text-align: center;">
+                    <span style="font-size: 0.82rem; color: var(--primary); font-weight: 700;">📋 كل ملزمة تتضمن فهرساً
+                        تفصيلياً كاملاً — يساعدك على تحديد العناوين المقررة عليك وتجنب الملغي بسهولة</span>
+                </div>
+            </div>
+
+            <!-- جدول الأسعار الموحد -->
+            <div class="card" style="padding: 1rem 0.8rem 0.8rem;">
+                <p style="text-align:center; font-size: 0.78rem; color: var(--outline); margin-bottom: 0.7rem;">
+                    📊 جدول الأسعار والعروض</p>
+
+
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th>عدد المواد</th>
+                            <th>سعر/مادة</th>
+                            <th>الخصم</th>
+                            <th>الإجمالي</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="pt-row-1">
+                            <td class="col-count">1 مادة</td>
+                            <td>200 جـ</td>
+                            <td class="col-saving zero">—</td>
+                            <td class="col-total">200 جـ</td>
+                        </tr>
+                        <tr id="pt-row-2">
+                            <td class="col-count">2 مادة</td>
+                            <td>180 جـ</td>
+                            <td class="col-saving">40 جـ 💰</td>
+                            <td class="col-total">360 جـ</td>
+                        </tr>
+                        <tr id="pt-row-3">
+                            <td class="col-count">3 مواد</td>
+                            <td>160 جـ</td>
+                            <td class="col-saving">120 جـ 💰</td>
+                            <td class="col-total">480 جـ</td>
+                        </tr>
+                        <tr id="pt-row-4">
+                            <td class="col-count">4 مواد</td>
+                            <td>140 جـ</td>
+                            <td class="col-saving">240 جـ 💰</td>
+                            <td class="col-total">560 جـ</td>
+                        </tr>
+                        <tr id="pt-row-5">
+                            <td class="col-count"><span class="best-deal-tag">الأفضل</span>5 مواد</td>
+                            <td>120 جـ</td>
+                            <td class="col-saving">400 جـ 🎉</td>
+                            <td class="col-total">600 جـ</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- صف التلخيص الديناميكي عند الاختيار -->
+                <div id="price-summary"
+                    style="display:none; margin-top:0.8rem; padding: 0.8rem 0.6rem; border-top: 1px solid var(--outline-variant); text-align:center;">
+                    <span style="font-size:0.85rem; color:var(--outline); font-weight:600;">اخترت </span>
+                    <span id="ps-count" style="font-size:0.95rem; font-weight:900; color:var(--primary);"></span>
+                    <span style="font-size:0.85rem; color:var(--outline); font-weight:600;"> · إجمالي: </span>
+                    <span id="ps-total" style="font-size:1rem; font-weight:900; color:var(--primary);"></span>
+                    <br>
+                    <span class="savings-pulse" id="ps-savings" style="display:none;"></span>
+                </div>
+            </div>
+
+            <!-- قائمة المواد للاختيار -->
+            <div class="card" style="padding: 1.2rem;">
+                <div class="purchase-header" style="margin-bottom: 1rem;">
+                    <h3>🛒 اختر موادك الآن</h3>
+                    <p>كلما اخترت أكثر، كلما وفّرت أكثر! 🎉</p>
+                </div>
+                <div class="select-all-row">
+                    <button class="btn-select-all" onclick="selectAllSubjects()">✅ اختيار الكل</button>
+                    <button class="btn-clear-all" onclick="clearAllSubjects()">✖️ إلغاء الكل</button>
+                </div>
+                <div class="subject-check-list" id="subject-check-list">
+                    <!-- يتم توليدها ديناميكياً -->
+                </div>
+            </div>
+
+            <!-- زر الطلب عبر واتساب -->
+            <button class="btn btn-whatsapp-order" id="btn-order" onclick="sendWhatsAppOrder()" disabled>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                </svg>
+                طلب الاشتراك عبر واتساب
+            </button>
+            <p style="text-align:center; font-size: 0.8rem; color: var(--outline); margin-top: 0.6rem;">سيتم تحويلك
+                لواتساب برسالة جاهزة 📩</p>
+
+        </div><!-- /purchase-section -->
+
+        <!-- Subjects Area (Dynamic) -->
+        <div id="subjects-area" class="hidden">
+        </div><!-- /subjects-area -->
+
+        <!-- Access Request Card -->
+        <div class="card access-card">
+            <h3>📩 طلب وصول خاص</h3>
+            <p>أرسل طلب وصول للملازم بعد التواصل مع المكتبة على واتساب، وتسديد ثمن الاشتراك، وسيتم الموافقة عليه مباشرةً
+                من قبل المكتبة.</p>
+            <button class="btn btn-access" onclick="openAccessRequest()">📩 إرسال طلب الوصول الآن</button>
+        </div>
+
+        <!-- Email Save Card -->
+        <div class="card" style="border-top: 5px solid var(--on-accent-tf);">
+            <h3>💾 حفظ بريدك الإلكتروني</h3>
+            <p style="font-size: 0.9rem; color: var(--outline); margin-bottom: 1rem;">قم بإدخال وحفظ "عنوان بريدك
+                الإلكتروني" الذي قمت بإرسال طلب الوصول من خلاله، حتى تتمكن من الوصول إلى ملفاتك وفتحها.</p>
+
+            <input type="email" id="email-display" class="email-display" placeholder="your-email@gmail.com">
+
+            <div class="email-actions">
+                <button class="btn btn-tf email-btn-save" onclick="saveManualEmail()">💾 حفظ البريد</button>
+            </div>
+            <div id="paste-success" class="paste-success" style="color: var(--on-accent-essay);">✅ تم الحفظ بنجاح!</div>
+        </div>
+
+    </div><!-- /container -->
+
+    <footer>
+        <!-- زر المشاركة -->
+        <div style="display:flex; justify-content:center; margin-bottom:2rem;">
+            <button class="btn-share" onclick="shareWebsite()">
+                <span class="material-symbols-outlined" style="font-size:1.2rem;">share</span>
+                شارك مكتبة الامتياز مع أصدقائك
+            </button>
+        </div>
+        <div class="social-links">
+            <a href="https://wa.me/201022641059" class="social-btn wa">
+                <span class="material-symbols-outlined">p2p</span> واتساب المكتبة
+            </a>
+            <a href="https://t.me/Alimtiaz_Library" class="social-btn tg">
+                <span class="material-symbols-outlined">send</span> انضم لجروب التيليجرام
+            </a>
+        </div>
+        <div class="brand" style="justify-content: center; margin-bottom: 1rem; opacity: 0.6;">
+            <h1 style="font-size: 1.1rem;">مكتبة الامتياز</h1>
+        </div>
+        <p style="font-size: 0.8rem; color: var(--outline);">
+            © 2026 مكتبة الامتياز. جميع الحقوق محفوظة.<br>
+            تم تطوير النظام بأحدث تقنيات التشفير السحابي لصالح مكتبة الامتياز.
+        </p>
+    </footer>
+
+    <!-- Secure Overlay -->
+    <div id="secure-overlay">
+        <div class="loader" id="overlay-loader">
+            <span class="material-symbols-outlined" id="overlay-icon"
+                style="color: white; font-size: 2.5rem;">lock</span>
+        </div>
+        <h2 id="overlay-title" style="color: var(--primary);">جاري تشفير الاتصال...</h2>
+        <p id="overlay-msg">يتم الآن منحك وصولاً آمنًا للمحتوى عبر بوابات جوجل السحابية</p>
+
+        <div id="overlay-actions"
+            style="display: none; margin-top: 1.5rem; flex-direction: column; gap: 0.8rem; width: 90%; max-width: 320px; animation: fadeInUp 0.5s ease;">
+            <button class="btn btn-tf" style="width: 100%; justify-content: center;" onclick="reopenCurrentFile()">
+                <span class="material-symbols-outlined">refresh</span> إعادة طلب الدخول مرة اخري
+            </button>
+            <button class="btn"
+                style="width: 100%; justify-content: center; background: var(--surface-container-high); color: var(--outline); border: 2px solid var(--outline-variant);"
+                onclick="closeOverlayAndGoBack()">
+                <span class="material-symbols-outlined">arrow_back</span> العودة للتصفح (الصفحة الرئيسية)
+            </button>
+        </div>
+    </div>
+
+    <!-- External Subject Links Data -->
+    <script src="data/sharia/year1.js?v=2"></script>
+    <script src="data/sharia/year2.js?v=2"></script>
+    <script src="data/sharia/year3.js?v=2"></script>
+    <script src="data/sharia/year4.js?v=2"></script>
+
+    <script>
+        // ============================================================
+        //   نظام الحماية الذكي - مكتبة الامتياز
+        // ============================================================
+        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyKSJEPZGFoeikYQrkMO1OfHTIhIeL1QeJIDnwaqvISWOvehFAwk-25xPKkYB51SthH/exec";
+        const LS_EMAIL_KEY = 'alimtiaz_user_email';
+        const LS_FP_KEY = 'alimtiaz_fp';
+
+        async function getDeviceFingerprint() {
+            const cached = localStorage.getItem(LS_FP_KEY);
+            if (cached) return cached;
+            const components = [];
+            try {
+                const canvas = document.createElement('canvas');
+                const ctx = canvas.getContext('2d');
+                ctx.textBaseline = 'top';
+                ctx.font = '14px Verdana';
+                ctx.fillText('🎨 maktaba fp مكتبة', 2, 2);
+                components.push(canvas.toDataURL());
+            } catch (e) { components.push('canvas-err'); }
+            try {
+                const gl = document.createElement('canvas').getContext('webgl');
+                const dbgInf = gl.getExtension('WEBGL_debug_renderer_info');
+                if (dbgInf) {
+                    components.push(gl.getParameter(dbgInf.UNMASKED_RENDERER_WEBGL));
+                    components.push(gl.getParameter(dbgInf.UNMASKED_VENDOR_WEBGL));
+                }
+            } catch (e) { components.push('webgl-err'); }
+            components.push([
+                screen.width, screen.height, screen.colorDepth,
+                navigator.language,
+                Intl.DateTimeFormat().resolvedOptions().timeZone,
+                navigator.hardwareConcurrency || 0,
+                navigator.platform || ''
+            ].join('|'));
+            const raw = components.join('###');
+            const hash = await _hashString(raw);
+            localStorage.setItem(LS_FP_KEY, hash);
+            return hash;
+        }
+
+        async function _hashString(str) {
+            const buf = new TextEncoder().encode(str);
+            const hash = await crypto.subtle.digest('SHA-256', buf);
+            return Array.from(new Uint8Array(hash)).map(b => b.toString(16).padStart(2, '0')).join('').substring(0, 32);
+        }
+
+        function getSavedEmail() { return localStorage.getItem(LS_EMAIL_KEY) || ''; }
+        function saveEmail(email) {
+            if (email && email.includes('@')) {
+                localStorage.setItem(LS_EMAIL_KEY, email.trim().toLowerCase());
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const saved = getSavedEmail();
+            _refreshEmailDisplay(saved);
+            checkDesktopDevice();
+            initHintState();
+
+            // استعادة الاختيارات الدراسية
+            const savedAcademicData = localStorage.getItem('alimtiaz_academic_data');
+            if (savedAcademicData) {
+                try {
+                    const data = JSON.parse(savedAcademicData);
+                    if (data.faculty && document.getElementById('sel-faculty')) document.getElementById('sel-faculty').value = data.faculty;
+                    if (data.year && document.getElementById('sel-year')) document.getElementById('sel-year').value = data.year;
+                    if (data.semester && document.getElementById('sel-semester')) document.getElementById('sel-semester').value = data.semester;
+                    if (data.madhhab && document.getElementById('sel-madhhab')) document.getElementById('sel-madhhab').value = data.madhhab;
+                } catch (e) { }
+            }
+
+            // محاولة التحميل التلقائي للمواد
+            setTimeout(() => {
+                if (document.getElementById('sel-faculty').value) {
+                    onSelectChange();
+                }
+            }, 200);
+        });
+
+        function _refreshEmailDisplay(email) {
+            const display = document.getElementById('email-display');
+            if (!display) return;
+            display.value = email || '';
+        }
+
+        function saveManualEmail() {
+            const input = document.getElementById('email-display');
+            const trimmed = input.value.trim().toLowerCase();
+            if (trimmed && trimmed.includes('@')) {
+                const btn = document.querySelector('.email-btn-save');
+                const originalText = btn ? btn.innerHTML : '💾 حفظ البريد';
+                if (btn) {
+                    btn.innerHTML = '⏳ جاري التحقق...';
+                    btn.disabled = true;
+                }
+
+                fetch(`${SCRIPT_URL}?email=${encodeURIComponent(trimmed)}&action=validate_email`)
+                    .then(r => r.json())
+                    .then(data => {
+                        if (data.status === 'success') {
+                            saveEmail(trimmed);
+                            _refreshEmailDisplay(trimmed);
+                            const success = document.getElementById('paste-success');
+                            success.innerText = '✅ ' + data.message + ' ... جاري تحديث بياناتك';
+                            success.style.display = 'block';
+                            success.style.color = '#10b981';
+                            setTimeout(() => window.location.reload(), 1500);
+                        } else {
+                            const success = document.getElementById('paste-success');
+                            success.innerText = '⚠️ عذراً، هذا البريد غير مسجل لدينا، يرجى طلب الاشتراك عبر واتساب أولاً.';
+                            success.style.display = 'block';
+                            success.style.color = '#ef4444';
+                            if (btn) {
+                                btn.innerHTML = originalText;
+                                btn.disabled = false;
+                            }
+                        }
+                    })
+                    .catch(err => {
+                        alert('حدث خطأ أثناء الاتصال بالسيرفر، يرجى المحاولة لاحقاً');
+                        if (btn) {
+                            btn.innerHTML = originalText;
+                            btn.disabled = false;
+                        }
+                    });
+            } else {
+                alert('⚠️ يرجى إدخال بريد إلكتروني صحيح يحتوي على @');
+            }
+        }
+
+        function pasteAndSave() {
+            if (navigator.clipboard && navigator.clipboard.readText) {
+                navigator.clipboard.readText().then(text => {
+                    const trimmed = text.trim().toLowerCase();
+                    if (trimmed.includes('@')) {
+                        document.getElementById('email-display').value = trimmed;
+                        saveManualEmail();
+                    } else { alert('⚠️ المحتوى المنسوخ لا يبدو بريداً إلكترونياً.'); }
+                }).catch(() => { alert('⚠️ تعذّر قراءة الحافظة.'); });
+            } else { alert('⚠️ المتصفح لا يدعم القراءة من الحافظة.'); }
+        }
+
+        const ACCESS_FILE_ID = '1DXIoesBalGTRBLDcZN5FprR9L4AYFVWp';
+        function openAccessRequest() {
+            if (/Android/i.test(navigator.userAgent)) {
+                window.location.href = `intent://drive.google.com/file/d/${ACCESS_FILE_ID}/view#Intent;package=com.google.android.apps.docs;scheme=https;end;`;
+            } else {
+                window.open(`https://drive.google.com/file/d/${ACCESS_FILE_ID}/view?usp=sharing`, '_blank');
+            }
+        }
+
+        const SUBJECT_DATA = {
+            'sharia': {
+                '1': { '2': ['التوحيد', 'قضايا فقهية معاصرة', 'أصول الفقه', 'فقه مذهبى', 'فقه مقارن'] },
+                '2': { '2': ['حديث الأحكام', 'أصول الفقه', 'فقه مقارن', 'فقه مذهبي', 'أحوال الشخصية للمسلمين'] },
+                '3': { '2': ['حديث الأحكام', 'أصول الفقه', 'فقه مقارن', 'فقه مذهبي', 'قضايا فقهية معاصرة'] },
+                '4': { '2': ['حديث الأحكام', 'أصول الفقه', 'فقه مقارن', 'فقه مذهبي', 'قضايا فقهية معاصرة'] }
+            }
+        };
+
+        /* ====== YEAR NAMES MAP ====== */
+        const YEAR_NAMES = { '1': 'الأولى', '2': 'الثانية', '3': 'الثالثة', '4': 'الرابعة' };
+        const FACULTY_NAMES = { 'sharia': 'الشريعة الإسلامية' };
+        const MADHHAB_NAMES = { 'hanafi': 'حنفي', 'shafii': 'شافعي', 'maliki': 'مالكي' };
+
+        /* ====== PRICING TIERS ====== */
+        const PRICE_TIERS = { 0: 0, 1: 200, 2: 180, 3: 160, 4: 140, 5: 120 };
+        const OFFER_NAMES = {
+            1: 'عرض المادة الواحدة',
+            2: 'عرض المادتين',
+            3: 'عرض الثلاث مواد',
+            4: 'عرض الأربع مواد',
+            5: 'عرض جميع المواد الخمس 🌟'
+        };
+
+        /* Current context */
+        let _currentSubjects = [];
+        let _currentFaculty = '';
+        let _currentYear = '';
+        let _currentMadhhab = '';
+        let _selectedSubjects = new Set();
+
+        /* ====== Check if user is already subscribed ====== */
+        function isSubscribed() {
+            return !!getSavedEmail();
+        }
+
+        /* ====== Render purchase subject list ====== */
+        function renderPurchaseList(items, faculty, year, madhhab) {
+            _currentSubjects = items;
+            _currentFaculty = faculty;
+            _currentYear = year;
+            _currentMadhhab = madhhab;
+            _selectedSubjects = new Set();
+
+            const list = document.getElementById('subject-check-list');
+            list.innerHTML = '';
+
+            items.forEach((name, idx) => {
+                const wrapper = document.createElement('div');
+                wrapper.className = 'subject-check-wrapper';
+
+                // === الصف المرئي (يحتوي على منطقتين منفصلتين تماماً) ===
+                const row = document.createElement('div');
+                row.className = 'subject-check-item';
+                row.id = `sci-${idx}`;
+
+                // المنطقة الأولى: اختيار المادة (مربع الصح + الاسم)
+                const selectArea = document.createElement('div');
+                selectArea.className = 'subject-select-area';
+
+                let labelContent = `${idx + 1}. ${name}`;
+                if (name === 'فقه مذهبي شافعي' || name === 'فقه مذهبي مالكي') {
+                    labelContent = `
+                        ${idx + 1}. ${name}
+                        <span style="display: block; font-size: 0.72rem; color: #ffab40; font-weight: 800; margin-top: 2px; opacity: 0.9;">⚠️ يتوفر قريباً</span>
+                    `;
+                }
+
+                selectArea.innerHTML = `
+                    <div class="check-box">
+                        <span class="check-mark">✓</span>
+                    </div>
+                    <span class="check-label">${labelContent}</span>
+                `;
+                selectArea.addEventListener('click', () => toggleSubject(idx));
+
+
+                // المنطقة الثانية: زر عرض المحتويات (منفصل تماماً عن الاختيار)
+                const previewToggle = document.createElement('div');
+                previewToggle.className = 'preview-toggle';
+                previewToggle.id = `spl-${idx}`;
+                previewToggle.textContent = 'أعرض محتويات المادة ▾';
+                previewToggle.addEventListener('click', () => togglePreview(idx));
+
+                row.appendChild(selectArea);
+                row.appendChild(previewToggle);
+
+                // === بطاقات المعاينة (تظهر تحت الصف) ===
+                // نحتاج رابط الكتاب الجامعي لهذه المادة لإتاحته مجاناً
+                const selFaculty = document.getElementById('sel-faculty').value;
+                const selYear = document.getElementById('sel-year').value;
+                const selSemester = document.getElementById('sel-semester').value;
+                const previewDataKey = `${selFaculty}_${selYear}_${selSemester}`;
+                const previewYearData = window.AlimtiazData && window.AlimtiazData[previewDataKey] ? window.AlimtiazData[previewDataKey] : {};
+                const previewLinks = previewYearData[name] || { book: '' };
+                const bookId = previewLinks.book || '';
+
+                const previewContainer = document.createElement('div');
+                previewContainer.className = 'subject-preview-container';
+                previewContainer.id = `spc-${idx}`;
+                previewContainer.innerHTML = `
+                    <div class="subject-preview-cards">
+                        <button class="preview-card-btn btn-preview-summary span-2" onclick="showSubscribePrompt()">
+                            <span class="material-symbols-outlined">description</span> الملخص الشامل
+                        </button>
+                        <button class="preview-card-btn btn-preview-essay" onclick="showSubscribePrompt()">
+                            <span class="material-symbols-outlined">edit_note</span> مقالي
+                        </button>
+                        <button class="preview-card-btn btn-preview-tf" onclick="showSubscribePrompt()">
+                            <span class="material-symbols-outlined">quiz</span> صح وخطأ
+                        </button>
+                        <button class="preview-card-btn btn-preview-full span-2" onclick="showSubscribePrompt()">
+                            <span class="material-symbols-outlined">auto_stories</span> الملف الشامل (ملخص + أسئلة)
+                        </button>
+                        <button class="preview-card-btn btn-preview-book span-2" onclick="startFreeBookFlow('${bookId}')">
+                            <span class="material-symbols-outlined">menu_book</span> الكتاب الجامعي 📖 <span style="font-size:0.6rem; color:#4ade80; margin-right:4px;">مجاني</span>
+                        </button>
+                    </div>
+                `;
+
+                wrapper.appendChild(row);
+                wrapper.appendChild(previewContainer);
+                list.appendChild(wrapper);
+            });
+
+            updatePriceSummary();
+            updateTierBadges(0);
+        }
+
+        function toggleSubject(idx) {
+            if (_selectedSubjects.has(idx)) {
+                _selectedSubjects.delete(idx);
+                document.getElementById(`sci-${idx}`).classList.remove('checked');
+            } else {
+                _selectedSubjects.add(idx);
+                document.getElementById(`sci-${idx}`).classList.add('checked');
+            }
+            updatePriceSummary();
+            updateTierBadges(_selectedSubjects.size);
+        }
+
+        function selectAllSubjects() {
+            _currentSubjects.forEach((_, idx) => {
+                _selectedSubjects.add(idx);
+                const el = document.getElementById(`sci-${idx}`);
+                if (el) el.classList.add('checked');
+            });
+            updatePriceSummary();
+            updateTierBadges(_selectedSubjects.size);
+        }
+
+        function clearAllSubjects() {
+            _selectedSubjects.clear();
+            _currentSubjects.forEach((_, idx) => {
+                const el = document.getElementById(`sci-${idx}`);
+                if (el) el.classList.remove('checked');
+            });
+            updatePriceSummary();
+            updateTierBadges(0);
+        }
+
+        function updateTierBadges(count) {
+            for (let i = 1; i <= 5; i++) {
+                const row = document.getElementById(`pt-row-${i}`);
+                if (!row) continue;
+                row.classList.toggle('pt-active', i === count);
+            }
+        }
+
+        function updatePriceSummary() {
+            const count = _selectedSubjects.size;
+            const summary = document.getElementById('price-summary');
+            const btn = document.getElementById('btn-order');
+
+            if (count === 0) {
+                summary.style.display = 'none';
+                btn.disabled = true;
+                return;
+            }
+
+            const unitPrice = PRICE_TIERS[count] || 120;
+            const total = unitPrice * count;
+            const originalTotal = 200 * count;
+            const saved = originalTotal - total;
+
+            document.getElementById('ps-count').textContent = count + ' مادة';
+            document.getElementById('ps-total').textContent = total + ' جنيه';
+
+            const savingsBadge = document.getElementById('ps-savings');
+            if (saved > 0) {
+                savingsBadge.textContent = `🎉 وفّرت ${saved} جنيه!`;
+                savingsBadge.style.display = 'inline-block';
+            } else {
+                savingsBadge.style.display = 'none';
+            }
+
+            summary.style.display = 'block';
+            btn.disabled = false;
+        }
+
+        /* ====== Toggle Preview Cards (Non-subscribers) ====== */
+        function togglePreview(idx) {
+            const container = document.getElementById(`spc-${idx}`);
+            const link = document.getElementById(`spl-${idx}`);
+            if (!container || !link) return;
+
+            if (container.classList.contains('open')) {
+                container.classList.remove('open');
+                link.textContent = 'أعرض محتويات المادة ▾';
+            } else {
+                container.classList.add('open');
+                link.textContent = 'إخفاء المحتويات ▴';
+            }
+        }
+
+        function showSubscribePrompt() {
+            alert(
+                '🌟 أهلاً بك في مكتبة الامتياز!\n\n' +
+                '📢 هذا المحتوى غير مجاني (متاح للمشتركين فقط).\n\n' +
+                '✨ اشترك الآن واحصل على:\n' +
+                '• ملخص شامل يُغني عن الكتاب\n' +
+                '• ملف أسئلة الامتحان المقالية مجابة (حصري ومهم)\n' +
+                '• ملف اسئلة صواب وخطأ مع التعليل والتصويب\n' +
+                '• ملف الدراسة الشامل للثلاث أقسام بشكل متسلسل لكل درس\n\n' +
+                '💡 اختر موادك من القائمة واضغط "طلب الاشتراك عبر واتساب" للبدء!\n\n' +
+                '🥳 كلما اخترت مواد أكثر، كلما وفّرت أكثر!'
+            );
+        }
+
+        /* ====== Send WhatsApp Order ====== */
+        function sendWhatsAppOrder() {
+            const count = _selectedSubjects.size;
+            if (count === 0) return;
+
+            const selected = Array.from(_selectedSubjects).sort();
+            const subjectList = selected.map((idx, i) => `${i + 1}. ${_currentSubjects[idx]}`).join('\n');
+
+            const offerName = OFFER_NAMES[count] || `عرض ${count} مواد`;
+            const facultyName = FACULTY_NAMES[_currentFaculty] || _currentFaculty;
+            const yearName = YEAR_NAMES[_currentYear] || `الفرقة ${_currentYear}`;
+            const madhhabName = MADHHAB_NAMES[_currentMadhhab] || '';
+            const unitPrice = PRICE_TIERS[count];
+            const total = unitPrice * count;
+
+            const msg = `السلام عليكم 🌟
+أريد الاشتراك في ${offerName}:
+
+${subjectList}
+
+لكلية ${facultyName}
+المذهب: ${madhhabName}
+الفرقة: ${yearName}
+لعام 2026
+
+💰 الإجمالي: ${total} جنيه (${unitPrice} جنيه/مادة)
+
+ما آلية الاشتراك وجميع التفاصيل؟
+وكيف يتم الدفع؟`;
+
+            const encoded = encodeURIComponent(msg);
+            const waNumber = '201022641059';
+            window.open(`https://wa.me/${waNumber}?text=${encoded}`, '_blank');
+        }
+
+        /* ====== Render standard subjects (for subscribers) ====== */
+        function renderSubjects(items, faculty, year, semester) {
+            const area = document.getElementById('subjects-area');
+            area.innerHTML = '';
+
+            const dataKey = `${faculty}_${year}_${semester}`;
+            const yearData = window.AlimtiazData && window.AlimtiazData[dataKey] ? window.AlimtiazData[dataKey] : {};
+
+            items.forEach(name => {
+                const links = yearData[name] || { summary: '', essay: '', tf: '', full: '', book: '' };
+
+                const card = document.createElement('div');
+                card.className = 'card subject-card';
+                card.innerHTML = `
+                    <h3>${name}</h3>
+                    <div class="actions-grid">
+                        <button class="btn btn-summary" onclick="startSecureFlow('${links.summary || ''}')">
+                            <span class="material-symbols-outlined">description</span> الملخص الشامل
+                        </button>
+                        <button class="btn btn-essay" onclick="startSecureFlow('${links.essay || ''}')">
+                            <span class="material-symbols-outlined">edit_note</span> مقالي
+                        </button>
+                        <button class="btn btn-tf" onclick="startSecureFlow('${links.tf || ''}')">
+                            <span class="material-symbols-outlined">quiz</span> صح وخطأ
+                        </button>
+                        <button class="btn btn-full" onclick="startSecureFlow('${links.full || ''}')">
+                            <span class="material-symbols-outlined">auto_stories</span> الملف الشامل (ملخص + أسئلة)
+                        </button>
+                        <button class="btn btn-book" onclick="startFreeBookFlow('${links.book || ''}')">
+                            <span class="material-symbols-outlined">menu_book</span> الكتاب الجامعي 📖
+                        </button>
+                    </div>
+                `;
+                area.appendChild(card);
+            });
+        }
+
+        function onSelectChange() {
+            const faculty = document.getElementById('sel-faculty').value;
+            const year = document.getElementById('sel-year').value;
+            const semester = document.getElementById('sel-semester').value;
+            const madhhabEl = document.getElementById('sel-madhhab');
+            const madhhab = madhhabEl ? madhhabEl.value : '';
+
+            const hint = document.getElementById('select-hint');
+            const area = document.getElementById('subjects-area');
+            const purchaseSection = document.getElementById('purchase-section');
+
+            if (faculty && year && semester && madhhab && SUBJECT_DATA[faculty] && SUBJECT_DATA[faculty][year] && SUBJECT_DATA[faculty][year][semester]) {
+                localStorage.setItem('alimtiaz_academic_data', JSON.stringify({ faculty, year, semester, madhhab }));
+                let subjects = [...SUBJECT_DATA[faculty][year][semester]];
+
+                // تعديل أسماء المواد بناءً على المذهب
+                subjects = subjects.map(sub => {
+                    if (sub === 'أصول الفقه' || sub === 'أصول فقه') {
+                        return madhhab === 'hanafi' ? 'أصول الفقه الحنفي' : 'أصول الفقه الغير حنفي';
+                    }
+                    if (sub === 'فقه مذهبي' || sub === 'فقه مذهبى') {
+                        if (madhhab === 'hanafi') return 'فقه مذهبي حنفي';
+                        if (madhhab === 'shafii') return 'فقه مذهبي شافعي';
+                        if (madhhab === 'maliki') return 'فقه مذهبي مالكي';
+                    }
+                    return sub;
+                });
+
+                hint.classList.add('hidden');
+
+                if (isSubscribed()) {
+                    /* مشترك → عرض المواد الكاملة مع الأزرار */
+                    purchaseSection.classList.add('hidden');
+                    renderSubjects(subjects, faculty, year, semester);
+                    area.classList.remove('hidden');
+                    setTimeout(() => area.scrollIntoView({ behavior: 'smooth', block: 'start' }), 150);
+                } else {
+                    /* غير مشترك → عرض قائمة الشراء */
+                    area.classList.add('hidden');
+                    renderPurchaseList(subjects, faculty, year, madhhab);
+                    purchaseSection.classList.remove('hidden');
+                    setTimeout(() => purchaseSection.scrollIntoView({ behavior: 'smooth', block: 'start' }), 150);
+                }
+            } else {
+                hint.classList.remove('hidden');
+                area.classList.add('hidden');
+                purchaseSection.classList.add('hidden');
+            }
+        }
+
+        let _activeFileId = null;
+        let _killFired = false;
+        let _fileOpened = false; // يتتبع هل الطالب فتح الملف في تطبيق Drive
+
+        function _fireKill(source) {
+            if (_killFired || !_activeFileId) return;
+            _killFired = true;
+            kill(_activeFileId);
+        }
+
+        // مراقب بسيط: عندما يرجع الطالب من تطبيق Drive، نحوّل الأوفرلاي لحالة "تم سحب الوصول"
+        document.addEventListener('visibilitychange', function() {
+            if (document.visibilityState === 'visible' && _fileOpened) {
+                _fileOpened = false; // منع التكرار
+                transformOverlayToRevokedState();
+            }
+        });
+
+        let _lastFlowType = null;
+
+        function _showOverlaySafe(titleMsg) {
+            const overlay = document.getElementById('secure-overlay');
+            const icon = document.getElementById('overlay-icon');
+            const loader = document.getElementById('overlay-loader');
+            const actions = document.getElementById('overlay-actions');
+
+            if (!history.state || !history.state.isOverlay) {
+                history.pushState({ isOverlay: true }, '');
+            }
+
+            overlay.style.display = 'flex';
+            document.getElementById('overlay-title').innerText = titleMsg || "جاري التحضير...";
+            document.getElementById('overlay-title').style.color = 'var(--primary)';
+            document.getElementById('overlay-msg').innerText = "يتم الآن منحك وصولاً آمنًا للمحتوى عبر بوابات جوجل السحابية";
+            document.getElementById('overlay-msg').style.display = 'block';
+
+            if (icon) {
+                icon.innerText = 'lock';
+                icon.style.color = 'white';
+            }
+            if (loader) loader.className = 'loader';
+            if (actions) actions.style.display = 'none';
+        }
+
+        function _hideOverlaySafe() {
+            const overlay = document.getElementById('secure-overlay');
+            if (overlay && overlay.style.display === 'flex') {
+                if (history.state && history.state.isOverlay) {
+                    history.back();
+                } else {
+                    overlay.style.display = 'none';
+                }
+            }
+        }
+
+        window.addEventListener('popstate', function (e) {
+            const overlay = document.getElementById('secure-overlay');
+            if (overlay && overlay.style.display === 'flex') {
+                overlay.style.display = 'none';
+            }
+        });
+
+        function closeOverlayAndGoBack() {
+            _hideOverlaySafe();
+        }
+
+        function transformOverlayToRevokedState() {
+            const title = document.getElementById('overlay-title');
+            const msg = document.getElementById('overlay-msg');
+            const icon = document.getElementById('overlay-icon');
+            const loader = document.getElementById('overlay-loader');
+            const actions = document.getElementById('overlay-actions');
+
+            if (title) title.innerHTML = '<span style="color: #ef4444;">تم سحب الوصول لأسباب أمنية</span>';
+            if (msg) {
+                msg.innerText = "اضغط هنا لإعادة طلب الدخول مرة اخري.";
+                msg.style.display = 'block';
+            }
+            if (icon) {
+                icon.innerText = 'gpp_bad';
+                icon.style.color = '#ef4444';
+            }
+            if (loader) loader.className = 'loader static-red';
+            if (actions) actions.style.display = 'flex';
+        }
+
+        function reopenCurrentFile() {
+            if (!_activeFileId) return;
+            if (_lastFlowType === 'free') {
+                startFreeBookFlow(_activeFileId);
+            } else {
+                startSecureFlow(_activeFileId);
+            }
+        }
+
+        function startSecureFlow(fileId) {
+            if (!fileId || fileId === 'يتوفر قريباً') {
+                alert("عذراً، هذا الملف غير متوفر حالياً. يتوفر قريباً إن شاء الله.");
+                return;
+            }
+            if (!/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+                alert("🔒 النظام الأمني: يرجى فتح الموقع من هاتفك الشخصي لضمان صلاحية العرض.");
+                return;
+            }
+            const STUDENT_EMAIL = getSavedEmail();
+            if (!STUDENT_EMAIL) {
+                alert("⚠️ يرجى حفظ بريدك الإلكتروني أولاً من قسم حفظ البريد.");
+                return;
+            }
+            _activeFileId = fileId;
+            _lastFlowType = 'secure';
+            _killFired = false;
+
+            _showOverlaySafe("جاري تشفير الاتصال...");
+            const overlay = document.getElementById('secure-overlay');
+
+            // تطبيق المؤقت الهجين - قراءة سرعة الإنترنت
+            let speedMbps = 2.0;
+            if (navigator.connection && navigator.connection.downlink) {
+                speedMbps = navigator.connection.downlink;
+            }
+
+            getDeviceFingerprint().then(fp => {
+                fetch(`${SCRIPT_URL}?email=${STUDENT_EMAIL}&fileId=${fileId}&fp=${fp}&speedMbps=${speedMbps}`)
+                    .then(r => r.json())
+                    .then(data => {
+                        if (data.status === 'blocked') {
+                            _hideOverlaySafe();
+                            alert('🚫 ' + data.message);
+                            return;
+                        }
+                        if (data.status === 'device_mismatch') {
+                            overlay.style.display = 'none';
+                            if (confirm(data.message)) {
+                                overlay.style.display = 'flex';
+                                document.getElementById('overlay-title').innerText = 'جاري تسجيل الجهاز...';
+                                fetch(`${SCRIPT_URL}?email=${STUDENT_EMAIL}&fileId=${fileId}&fp=${fp}&action=confirm_switch&speedMbps=${speedMbps}`)
+                                    .then(r => r.json())
+                                    .then(d => {
+                                        if (d.status === 'success') { _launchFile(d.fileId, overlay, d.timeoutMs); }
+                                        else { _hideOverlaySafe(); alert('❌ ' + d.message); }
+                                    });
+                            } else {
+                                _hideOverlaySafe();
+                            }
+                            return;
+                        }
+                        if (data.status === 'success') {
+                            document.getElementById('overlay-title').innerText = "✅ تم التصريح بالدخول";
+                            _launchFile(data.fileId, overlay, data.timeoutMs);
+                        } else {
+                            _hideOverlaySafe();
+                            alert("❌ فشل النظام: " + data.message);
+                        }
+                    })
+                    .catch(() => { _hideOverlaySafe(); alert("خطأ في الاتصال بالسيرفر."); });
+            });
+        }
+
+        function _launchFile(fileId, overlay, timeoutMs) {
+            _activeFileId = fileId;
+            _killFired = false;
+
+            setTimeout(() => {
+                _fileOpened = true; // تفعيل مراقب العودة من Drive
+                // فتح الملف في تطبيق Drive
+                if (/Android/i.test(navigator.userAgent)) {
+                    window.location.href = `intent://drive.google.com/file/d/${fileId}/view#Intent;package=com.google.android.apps.docs;scheme=https;end;`;
+                } else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+                    window.location.href = `https://drive.google.com/file/d/${fileId}/view`;
+                } else {
+                    window.open(`https://drive.google.com/file/d/${fileId}/view`, '_blank');
+                }
+
+                // ☠️ القتل الفوري: بعد ثانية واحدة فقط (التطبيق يكون حمّل الملف في الكاش)
+                setTimeout(() => _fireKill('instant-kill'), 1000);
+            }, 500);
+        }
+
+        function kill(fileId) {
+            if (!fileId) return;
+            const email = getSavedEmail() || 'free_book_user';
+            fetch(`${SCRIPT_URL}?email=${email}&fileId=${fileId}&action=kill`, { keepalive: true });
+        }
+
+        // ============================================================
+        //   نظام فتح الكتب الجامعية المجاني (بدون تحقق من الاشتراك)
+        //   يستخدم نفس فكرة الملف المؤقت لحماية الرابط الأصلي
+        // ============================================================
+        function startFreeBookFlow(fileId) {
+            if (!fileId || fileId === 'يتوفر قريباً') {
+                alert("عذراً، هذا الكتاب غير متوفر حالياً. يتوفر قريباً إن شاء الله.");
+                return;
+            }
+            if (!/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+                alert("🔒 النظام الأمني: يرجى فتح الموقع من هاتفك الشخصي لضمان صلاحية العرض.");
+                return;
+            }
+
+            _activeFileId = fileId;
+            _lastFlowType = 'free';
+            _killFired = false;
+
+            _showOverlaySafe("جاري تحضير الكتاب الجامعي...");
+            const overlay = document.getElementById('secure-overlay');
+
+            // قراءة سرعة الإنترنت
+            let speedMbps = 2.0;
+            if (navigator.connection && navigator.connection.downlink) {
+                speedMbps = navigator.connection.downlink;
+            }
+
+            // استدعاء السيرفر بالـ action=free_book (بدون تحقق من الإيميل في الشيت)
+            fetch(`${SCRIPT_URL}?fileId=${fileId}&action=free_book&speedMbps=${speedMbps}`)
+                .then(r => r.json())
+                .then(data => {
+                    if (data.status === 'success') {
+                        document.getElementById('overlay-title').innerText = "✅ تم تحضير الكتاب";
+                        _launchFile(data.fileId, overlay, data.timeoutMs);
+                    } else {
+                        _hideOverlaySafe();
+                        alert("❌ خطأ: " + data.message);
+                    }
+                })
+                .catch(() => { _hideOverlaySafe(); alert("خطأ في الاتصال بالسيرفر."); });
+        }
+
+        /* ====== وظائف التحسينات الإضافية ====== */
+        function checkDesktopDevice() {
+            const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+            const banner = document.getElementById('desktop-banner');
+            if (!isMobile && banner) banner.classList.add('show');
+        }
+
+        function initHintState() {
+            const hintIcon = document.getElementById('hint-icon');
+            const hintText = document.getElementById('hint-text');
+            if (!hintIcon || !hintText) return;
+
+            // تحقق سريع لمعرفة ما إذا تم تحميل ملفات الجافاسكريبت بنجاح
+            if (window.AlimtiazData && window.AlimtiazData['sharia_1_2']) {
+                hintIcon.textContent = '📚';
+                hintText.innerHTML = 'اختر فرقتك الدراسية ومذهبك<br>لعرض المواد والملخصات الخاصه بك';
+            } else {
+                hintIcon.textContent = '⚠️';
+                hintText.innerHTML = '<span style="color:#ef4444;font-weight:800;">تعذّر تحميل البيانات<br><span style="font-size:0.85rem;font-weight:600;">يرجى تحديث الصفحة</span></span>';
+            }
+        }
+
+        function shareWebsite() {
+            const pageUrl = window.location.origin + window.location.pathname;
+            const shareText = '📚 مكتبة الامتياز\nأحدث ملخصات وملازم أسئلة مجابة لكليات الأزهر 2026\n\n' + pageUrl;
+
+            if (navigator.share) {
+                navigator.share({
+                    title: 'مكتبة الامتياز',
+                    text: 'أحدث ملخصات وملازم أسئلة مجابة لطلاب الأزهر',
+                    url: pageUrl
+                }).catch((err) => { console.log('Share error:', err); });
+            } else {
+                window.open('https://wa.me/?text=' + encodeURIComponent(shareText), '_blank');
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <!-- Meta tags for SEO & Sharing -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأسئلة الشائعة — مكتبة الامتياز</title>
+    <meta name="description" content="إجابات لمعظم الأسئلة الشائعة حول خدمات وملازم مكتبة الامتياز.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+
+    <style>
+        :root {
+            --primary: #c5a059;
+            --primary-container: #1b1811;
+            --surface: #0a0a0a;
+            --background: #0a0a0a;
+            --on-background: #ffffff;
+            --surface-container-low: #0f0f0f;
+            --surface-container-high: #1a1a1a;
+            --outline: #8c7b60;
+            --outline-variant: #2d2d2d;
+            --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        * {
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--background);
+            color: var(--on-background);
+            font-family: 'Cairo', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 1.6;
+        }
+
+        /* Premium Header */
+        header {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem 5%;
+            background: rgba(10, 10, 10, 0.9);
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            z-index: 1000;
+            border-bottom: 1px solid var(--outline-variant);
+        }
+
+        header h1 {
+            font-weight: 900;
+            font-size: 1.8rem;
+            color: var(--primary);
+            line-height: 1.1;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            padding: 40px 24px;
+            animation: fadeInUp 0.6s ease;
+            flex: 1;
+        }
+
+        /* Construction Banner */
+        .construction-banner {
+            background: linear-gradient(135deg, rgba(197, 160, 89, 0.1), rgba(197, 160, 89, 0.05));
+            border: 2px dashed rgba(197, 160, 89, 0.4);
+            border-radius: 1.5rem;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .construction-banner .icon {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            display: block;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .construction-banner h2 {
+            color: var(--primary);
+            font-weight: 900;
+            font-size: 1.6rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .construction-banner p {
+            color: var(--outline);
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        /* FAQ Accordion Styling */
+        details {
+            background: var(--surface-container-high);
+            border: 1px solid var(--outline-variant);
+            border-radius: 1rem;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        details:hover {
+            border-color: rgba(197, 160, 89, 0.4);
+        }
+
+        details[open] {
+            border-color: var(--primary);
+            box-shadow: 0 4px 20px rgba(197, 160, 89, 0.1);
+        }
+
+        summary {
+            padding: 1.2rem 1.5rem;
+            font-weight: 800;
+            font-size: 1.05rem;
+            color: var(--on-background);
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            user-select: none;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: 'expand_more';
+            font-family: 'Material Symbols Outlined';
+            font-size: 1.5rem;
+            color: var(--primary);
+            transition: transform 0.3s ease;
+        }
+
+        details[open] summary::after {
+            transform: rotate(180deg);
+        }
+
+        .faq-content {
+            padding: 0 1.5rem 1.2rem 1.5rem;
+            color: #d1d1d1;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            border-top: 1px dashed rgba(255, 255, 255, 0.05);
+            margin-top: 0.5rem;
+            padding-top: 1rem;
+        }
+
+        .btn-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--surface-container-low);
+            color: var(--on-background);
+            text-decoration: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 9999px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            border: 1px solid var(--outline-variant);
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+
+        .btn-back:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>مكتبة الامتياز</h1>
+    </header>
+
+    <div class="container">
+
+        <a href="index.html" class="btn-back">
+            <span class="material-symbols-outlined" style="font-size: 1.2rem;">arrow_back</span>
+            العودة للصفحة الرئيسية
+        </a>
+
+        <!-- رسالة تحت الإنشاء -->
+        <div class="construction-banner">
+            <span class="icon">🚧</span>
+            <h2>هذا القسم تحت الإنشاء </h2>
+
+            <p>سيتوفر قريباً.</p>
+        </div>
+
+        <h3
+            style="color: var(--primary); margin-bottom: 1rem; font-weight: 900; display:flex; align-items:center; gap:8px;">
+            <span class="material-symbols-outlined">help_center</span>
+            الأسئلة الشائعة والإجابات
+        </h3>
+
+        <!-- ============================================== -->
+        <!-- 📝 منطقة الأسئلة: يمكنك الاستمرار في إضافة أسئلة هنا -->
+        <!-- ============================================== -->
+
+
+        <!-- سؤال 2 -->
+        <details>
+            <summary>هل يمكنني طباعة أو تنزيل الملخصات (PDF)؟</summary>
+            <div class="faq-content">
+                لأسباب تتعلق بحفظ حقوق الملكية الفكرية، الملفات متاحة للعرض والدراسة عبر شاشة هاتفك فقط بأعلى جودة،
+                ولكنها غير
+                قابلة للتنزيل المباشر أو الطباعة حفاظاً على مجهود المكتبة ومنع تسريبها.
+            </div>
+
+        </details>
+
+        <!-- سؤال 3 -->
+        <details>
+            <summary>ماذا يحدث إذا قمت بفتح الموقع من جهاز آخر؟</summary>
+            <div class="faq-content">
+                يسمح النظام بتغيير الجهاز مرة واحدة فقط في الحالات الطارئة. إذا تم اكتشاف محاولة دخول من جهاز ثالث
+                مختلف، سيقوم النظام تلقائياً بحظر حسابك مؤقتاً لمدة 24 ساعة.
+            </div>
+
+        </details>
+
+        <!-- 💡 طريقة إضافة سؤال جديد: 
+             انسخ الكود من <details> إلى </details> والصقه هنا، 
+             ثم غير السؤال الداخلي والجواب كما تحب. 
+        -->
+
+        <!-- 
+        <details>
+            <summary>اكتب السؤال هنا...</summary>
+            <div class="faq-content">
+                اكتب الإجابة التفصيلية هنا...
+            </div>
+        </details>
+        -->
+
+    </div>
+</body>
+
+</html>
