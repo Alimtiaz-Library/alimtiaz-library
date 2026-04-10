@@ -37,11 +37,11 @@ window.AlimtiazData['sharia_1_2'] = {
         book: "sh1_fqhhan_book"
     },
     "فقه مذهبي شافعي": {
-        summary: "يتوفر قريباً",
-        essay: "يتوفر قريباً",
-        tf: "يتوفر قريباً",
-        full: "يتوفر قريباً",
-        book: "يتوفر قريباً"
+        summary: "sh1_fqhsha_sum",
+        essay: "sh1_fqhsha_ess",
+        tf: "sh1_fqhsha_tf",
+        full: "sh1_fqhsha_full",
+        book: "sh1_fqhsha_book"
     },
     "فقه مذهبي مالكي": {
         summary: "يتوفر قريباً",
