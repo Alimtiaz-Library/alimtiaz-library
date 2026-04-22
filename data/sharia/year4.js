@@ -16,11 +16,11 @@ window.AlimtiazData['sharia_4_2'] = {
         book: "يتوفر قريباً"
     },
     "أصول الفقه الغير حنفي": {
-        summary: "يتوفر قريباً",
-        essay: "يتوفر قريباً",
-        tf: "يتوفر قريباً",
-        full: "يتوفر قريباً",
-        book: "يتوفر قريباً"
+        summary: "sh4_usloth_sum",
+        essay: "sh4_usloth_ess",
+        tf: "sh4_usloth_tf",
+        full: "sh4_usloth_full",
+        book: "sh4_usloth_book"
     },
     "فقه مقارن": {
         summary: "sh4_fqhmuq_sum",
