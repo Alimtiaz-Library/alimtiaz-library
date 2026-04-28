@@ -2346,6 +2346,8 @@ ${subjectList}
 
         /* ====== وظائف التحسينات الإضافية ====== */
         function isEmulator() {
+            const isMobileUA = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+            
             try {
                 const canvas = document.createElement('canvas');
                 const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
@@ -2354,18 +2356,34 @@ ${subjectList}
                     if (debugInfo) {
                         const renderer = gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL).toLowerCase();
                         const vendor = gl.getParameter(debugInfo.UNMASKED_VENDOR_WEBGL).toLowerCase();
+                        
+                        // 1. الكشف عن أسماء المحاكيات الصريحة
                         const emulatorIndicators = [
                             'swiftshader', 'llvmpipe', 'virtualbox', 'vmware',
                             'bluestacks', 'nox', 'genymotion', 'microsoft basic render driver',
-                            'bignox'
+                            'bignox', 'andy', 'memu', 'microvirt'
                         ];
                         if (emulatorIndicators.some(i => renderer.includes(i) || vendor.includes(i))) {
+                            return true;
+                        }
+
+                        // 2. الضربة القاضية: كشف كروت شاشة الكمبيوتر داخل نظام أندرويد الوهمي
+                        // الهواتف الحقيقية تستخدم Adreno, Mali, PowerVR
+                        // المحاكي يستخدم كارت الكمبيوتر (NVIDIA, AMD, Intel)
+                        const desktopGpus = ['nvidia', 'amd', 'intel', 'radeon', 'geforce', 'rtx', 'gtx', 'direct3d', 'd3d11', 'd3d9', 'angle (intel', 'angle (nvidia', 'angle (amd'];
+                        if (isMobileUA && desktopGpus.some(i => renderer.includes(i) || vendor.includes(i))) {
                             return true;
                         }
                     }
                 }
             } catch (e) {}
 
+            // 3. كشف الاتصال السلكي (المحاكيات تظهر كأنها متصلة بـ Ethernet)
+            if (navigator.connection && navigator.connection.type === 'ethernet' && isMobileUA) {
+                return true;
+            }
+
+            // 4. كشف البصمات في الـ User Agent
             const ua = navigator.userAgent.toLowerCase();
             const emulatorUAs = ['build/vbox86p', 'build/genymotion', 'android sdk built for x86', 'emulator', 'bluestacks', 'ldplayer', 'nox', 'bignox'];
             if (emulatorUAs.some(keyword => ua.includes(keyword))) {
