@@ -2348,6 +2348,18 @@ ${subjectList}
         function isEmulator() {
             const isMobileUA = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
             
+            // 0. الفحص الأقوى: اللمس مقابل الماوس
+            // الهواتف الحقيقية تدعم اللمس المتعدد (عادة 5 إلى 10 نقاط). المحاكيات تعيد 1 أو 0 لأنها تستخدم الماوس.
+            if (isMobileUA && navigator.maxTouchPoints <= 1) {
+                return true;
+            }
+
+            // الهواتف الحقيقية تستخدم اللمس (coarse)، بينما الكمبيوتر يستخدم الماوس الدقيق (fine)
+            if (isMobileUA && window.matchMedia) {
+                if (window.matchMedia("(pointer: fine)").matches && !window.matchMedia("(pointer: coarse)").matches) {
+                    return true;
+                }
+            }
             try {
                 const canvas = document.createElement('canvas');
                 const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
