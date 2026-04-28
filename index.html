@@ -2348,7 +2348,20 @@ ${subjectList}
         function isEmulator() {
             const isMobileUA = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
             
-            // 0. الفحص الأقوى: اللمس مقابل الماوس
+            // 1. الضربة القاضية الأولى: معمارية المعالج (CPU Architecture)
+            // الهواتف الحقيقية تستخدم معالجات ARM. المحاكيات تستخدم بنية الكمبيوتر x86.
+            const platform = (navigator.platform || '').toLowerCase();
+            if (isMobileUA && (platform.includes('x86') || platform.includes('i686') || platform.includes('win') || platform.includes('mac'))) {
+                return true;
+            }
+
+            // 2. الضربة القاضية الثانية: كثافة البكسلات وأبعاد الشاشة الفاضحة
+            // المحاكي يعمل بكثافة بكسلات 1 وعرض شاشة كمبيوتر. الهواتف كثافتها 2+ وعرضها المنطقي صغير.
+            if (isMobileUA && window.devicePixelRatio === 1 && screen.width > 800) {
+                return true;
+            }
+
+            // 3. الفحص الأقوى: اللمس مقابل الماوس
             // الهواتف الحقيقية تدعم اللمس المتعدد (عادة 5 إلى 10 نقاط). المحاكيات تعيد 1 أو 0 لأنها تستخدم الماوس.
             if (isMobileUA && navigator.maxTouchPoints <= 1) {
                 return true;
