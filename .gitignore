@@ -4,6 +4,9 @@ APP_SCRIPT.JS
 # Sensitive data mapping (contains real Google Drive IDs)
 file_links_map.csv
 
+# Internal documentation (system architecture details)
+DOCS_ADD_FILES.md
+
 # Ignore Mac OS / System files
 .DS_Store
 Thumbs.db

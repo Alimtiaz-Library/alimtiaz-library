@@ -1672,6 +1672,8 @@
         }
 
         window.addEventListener('DOMContentLoaded', () => {
+            if (checkAndBlockEmulator()) return;
+            
             const saved = getSavedEmail();
             _refreshEmailDisplay(saved);
             checkDesktopDevice();
@@ -2126,7 +2128,7 @@ ${subjectList}
         }
 
         // مراقب بسيط: عندما يرجع الطالب من تطبيق Drive، نحوّل الأوفرلاي لحالة "تم سحب الوصول"
-        document.addEventListener('visibilitychange', function() {
+        document.addEventListener('visibilitychange', function () {
             if (document.visibilityState === 'visible' && _fileOpened) {
                 _fileOpened = false; // منع التكرار
                 transformOverlayToRevokedState();
@@ -2343,6 +2345,65 @@ ${subjectList}
         }
 
         /* ====== وظائف التحسينات الإضافية ====== */
+        function isEmulator() {
+            try {
+                const canvas = document.createElement('canvas');
+                const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+                if (gl) {
+                    const debugInfo = gl.getExtension('WEBGL_debug_renderer_info');
+                    if (debugInfo) {
+                        const renderer = gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL).toLowerCase();
+                        const vendor = gl.getParameter(debugInfo.UNMASKED_VENDOR_WEBGL).toLowerCase();
+                        const emulatorIndicators = [
+                            'swiftshader', 'llvmpipe', 'virtualbox', 'vmware',
+                            'bluestacks', 'nox', 'genymotion', 'microsoft basic render driver',
+                            'bignox'
+                        ];
+                        if (emulatorIndicators.some(i => renderer.includes(i) || vendor.includes(i))) {
+                            return true;
+                        }
+                    }
+                }
+            } catch (e) {}
+
+            const ua = navigator.userAgent.toLowerCase();
+            const emulatorUAs = ['build/vbox86p', 'build/genymotion', 'android sdk built for x86', 'emulator', 'bluestacks', 'ldplayer', 'nox', 'bignox'];
+            if (emulatorUAs.some(keyword => ua.includes(keyword))) {
+                return true;
+            }
+
+            return false;
+        }
+
+        function checkAndBlockEmulator() {
+            if (isEmulator()) {
+                const container = document.querySelector('.container');
+                if (container) container.style.display = 'none';
+                
+                const desktopBanner = document.getElementById('desktop-banner');
+                if (desktopBanner) desktopBanner.style.display = 'none';
+
+                let emulatorScreen = document.getElementById('emulator-screen');
+                if (!emulatorScreen) {
+                    emulatorScreen = document.createElement('div');
+                    emulatorScreen.id = 'emulator-screen';
+                    emulatorScreen.innerHTML = `
+                        <div style="text-align: center; background: #1a0f0f; border: 2px solid #ef4444; border-radius: 1.5rem; padding: 2rem; max-width: 400px; margin: 4rem auto 2rem; box-shadow: 0 10px 30px rgba(239, 68, 68, 0.2);">
+                            <span class="material-symbols-outlined" style="font-size: 4rem; color: #ef4444; margin-bottom: 1rem;">gpp_bad</span>
+                            <h2 style="color: #ef4444; font-family: 'Cairo', sans-serif; font-weight: 900; margin-bottom: 1rem;">تم حظر الوصول</h2>
+                            <p style="color: #fff; font-size: 1.05rem; font-weight: 600; line-height: 1.6;">
+                                يبدو أنك تستخدم محاكي تشغيل (Emulator) من جهاز كمبيوتر.<br><br>
+                                للحفاظ على حقوق الملكية ومواصلة التصفح، يُرجى الدخول للموقع من هاتف محمول حقيقي.
+                            </p>
+                        </div>
+                    `;
+                    document.body.appendChild(emulatorScreen);
+                }
+                return true;
+            }
+            return false;
+        }
+
         function checkDesktopDevice() {
             const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
             const banner = document.getElementById('desktop-banner');
