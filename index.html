@@ -1832,7 +1832,7 @@
                 selectArea.className = 'subject-select-area';
 
                 let labelContent = `${idx + 1}. ${name}`;
-                if (name.includes('فقه') || name.includes('أصول')) {
+                if ((name.includes('فقه') || name.includes('أصول')) && !name.includes('مقارن') && !name.includes('قضايا')) {
                     labelContent += `<br><span style="display: block; font-size: 0.72rem; color: var(--primary); font-weight: 800; margin-top: 2px; opacity: 0.9;">( موضوعية ونصية )</span>`;
                 }
 
