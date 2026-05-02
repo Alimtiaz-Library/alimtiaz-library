@@ -36,12 +36,19 @@ window.AlimtiazData['sharia_4_2'] = {
         full: "sh4_fqhhan_full",
         book: "sh4_fqhhan_book"
     },
-    "فقه مذهبي شافعي": {
+    "موضوعية الفقه الشافعي": {
         summary: "sh4_fqhsha_sum",
         essay: "sh4_fqhsha_ess",
         tf: "sh4_fqhsha_tf",
         full: "sh4_fqhsha_full",
         book: "sh4_fqhsha_book"
+    },
+    "نصية الفقه الشافعي": {
+        summary: "يتوفر قريباً",
+        essay: "يتوفر قريباً",
+        tf: "يتوفر قريباً",
+        full: "يتوفر قريباً",
+        book: "يتوفر قريباً"
     },
     "فقه مذهبي مالكي": {
         summary: "sh4_fqhmal_sum",

@@ -1832,6 +1832,9 @@
                 selectArea.className = 'subject-select-area';
 
                 let labelContent = `${idx + 1}. ${name}`;
+                if (name.includes('فقه') || name.includes('أصول')) {
+                    labelContent += `<br><span style="display: block; font-size: 0.72rem; color: var(--primary); font-weight: 800; margin-top: 2px; opacity: 0.9;">( موضوعية ونصية )</span>`;
+                }
 
 
                 selectArea.innerHTML = `
@@ -2100,7 +2103,20 @@ ${subjectList}
                 if (isSubscribed()) {
                     /* مشترك → عرض المواد الكاملة مع الأزرار */
                     purchaseSection.classList.add('hidden');
-                    renderSubjects(subjects, faculty, year, semester);
+
+                    // تقسيم مادة الفقه الشافعي (رابعة) والمالكي (ثالثة) لبطاقتين للمشتركين
+                    let finalSubjects = [];
+                    subjects.forEach(sub => {
+                        if (sub === 'فقه مذهبي شافعي' && year === '4') {
+                            finalSubjects.push('موضوعية الفقه الشافعي', 'نصية الفقه الشافعي');
+                        } else if (sub === 'فقه مذهبي مالكي' && year === '3') {
+                            finalSubjects.push('موضوعية الفقه المالكي', 'نصية الفقه المالكي');
+                        } else {
+                            finalSubjects.push(sub);
+                        }
+                    });
+
+                    renderSubjects(finalSubjects, faculty, year, semester);
                     area.classList.remove('hidden');
                     setTimeout(() => area.scrollIntoView({ behavior: 'smooth', block: 'start' }), 150);
                 } else {
