@@ -44,11 +44,11 @@ window.AlimtiazData['sharia_4_2'] = {
         book: "sh4_fqhsha_book"
     },
     "نصية الفقه الشافعي": {
-        summary: "يتوفر قريباً",
-        essay: "يتوفر قريباً",
-        tf: "يتوفر قريباً",
+        summary: "sh4_fqhsha_txt_sum",
+        essay: "sh4_fqhsha_txt_ess",
+        tf: "sh4_fqhsha_txt_tf",
         full: "يتوفر قريباً",
-        book: "يتوفر قريباً"
+        book: "sh4_fqhsha_txt_book"
     },
     "فقه مذهبي مالكي": {
         summary: "sh4_fqhmal_sum",
