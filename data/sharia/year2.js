@@ -30,25 +30,25 @@ window.AlimtiazData['sharia_2_2'] = {
         book: "sh2_fqhmuq_book"
     },
     "فقه مذهبي حنفي": {
-        summary: "يتوفر قريباً",
-        essay: "يتوفر قريباً",
-        tf: "يتوفر قريباً",
+        summary: "sh2_fqhhan_sum",
+        essay: "sh2_fqhhan_ess",
+        tf: "sh2_fqhhan_tf",
         full: "يتوفر قريباً",
-        book: "يتوفر قريباً"
+        book: "sh2_fqhhan_book"
     },
     "فقه مذهبي شافعي": {
-        summary: "يتوفر قريباً",
-        essay: "يتوفر قريباً",
-        tf: "يتوفر قريباً",
+        summary: "sh2_fqhsha_sum",
+        essay: "sh2_fqhsha_ess",
+        tf: "sh2_fqhsha_tf",
         full: "يتوفر قريباً",
-        book: "يتوفر قريباً"
+        book: "sh2_fqhsha_book"
     },
     "فقه مذهبي مالكي": {
-        summary: "يتوفر قريباً",
-        essay: "يتوفر قريباً",
-        tf: "يتوفر قريباً",
+        summary: "sh2_fqhmal_sum",
+        essay: "sh2_fqhmal_ess",
+        tf: "sh2_fqhmal_tf",
         full: "يتوفر قريباً",
-        book: "يتوفر قريباً"
+        book: "sh2_fqhmal_book"
     },
     "أحوال الشخصية للمسلمين": {
         summary: "sh2_ahwper_sum",
