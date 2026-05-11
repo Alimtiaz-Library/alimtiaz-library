@@ -44,11 +44,11 @@ window.AlimtiazData['sharia_1_2'] = {
         book: "sh1_fqhsha_book"
     },
     "فقه مذهبي مالكي": {
-        summary: "يتوفر قريباً",
-        essay: "يتوفر قريباً",
-        tf: "يتوفر قريباً",
+        summary: "sh1_fqhmal_sum",
+        essay: "sh1_fqhmal_ess",
+        tf: "sh1_fqhmal_tf",
         full: "يتوفر قريباً",
-        book: "يتوفر قريباً"
+        book: "sh1_fqhmal_book"
     },
     "فقه مقارن": {
         summary: "sh1_fqhmuq_sum",
