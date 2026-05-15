@@ -19,7 +19,7 @@ window.AlimtiazData['sharia_4_2'] = {
         summary: "sh4_usloth_sum",
         essay: "sh4_usloth_ess",
         tf: "sh4_usloth_tf",
-        full: "sh4_usloth_full",
+        full: "يتوفر قريباً",
         book: "sh4_usloth_book"
     },
     "فقه مقارن": {
@@ -61,7 +61,7 @@ window.AlimtiazData['sharia_4_2'] = {
         summary: "sh4_qad_sum",
         essay: "sh4_qad_ess",
         tf: "sh4_qad_tf",
-        full: "sh4_qad_full",
+        full: "يتوفر قريباً",
         book: "sh4_qad_book"
     }
 };
