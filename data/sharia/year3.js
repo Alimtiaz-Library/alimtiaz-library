@@ -51,11 +51,11 @@ window.AlimtiazData['sharia_3_2'] = {
         book: "sh3_fqhmal_book"
     },
     "نصية الفقه المالكي": {
-        summary: "يتوفر قريباً",
-        essay: "يتوفر قريباً",
-        tf: "يتوفر قريباً",
-        full: "يتوفر قريباً",
-        book: "يتوفر قريباً"
+        summary: "sh3_fqhmal_txt_sum",
+        essay: "sh3_fqhmal_txt_ess",
+        tf: "sh3_fqhmal_txt_tf",
+        full: "sh3_fqhmal_txt_full",
+        book: "sh3_fqhmal_txt_book"
     },
     "قضايا فقهية معاصرة": {
         summary: "sh3_qad_sum",
